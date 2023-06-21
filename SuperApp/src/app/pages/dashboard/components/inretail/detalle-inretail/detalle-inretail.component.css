@@ -1,0 +1,178 @@
+/* General */
+#table-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table-perfil .perfil {
+  margin-left: 50px;
+  width: 810px;
+  *flex-basis: 57%;
+}
+
+/* Fin General */
+
+/* Atras */
+.atras span {
+  padding: 3px;
+  margin-left: 10px;
+  font-size: 14px;
+  border: 0.5 solid #ddd;
+  background: white;
+  color: #105A76;
+}
+
+/* Fin de atras */
+/* Primer segmento */
+.sec {
+  border-radius: 16px;
+  background: white;
+  width: 100%;
+}
+
+.uno {
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sec1 {
+  height: 150px;
+  flex-basis: 40%;
+}
+
+.sec2 {
+  height: 150px;
+  flex-basis: 60%;
+}
+
+.headt {
+  margin-top: 25px;
+  margin-bottom: -20px;
+  font-size: 12px;
+}
+
+.headt th {
+  font-size: 12px;
+  color: #5F91A3;
+}
+
+.headt th:nth-child(1) {
+  width: 25%;
+}
+
+.headb {
+  font-size: 13px;
+  height: 40px;
+  margin-left: 15px;
+  width: 300px;
+  background: #3ACC6E;
+  border-radius: 18px;
+  border: 1px solid #3ACC6E;
+}
+
+.headb td {
+  font-size: 13px;
+  color: white;
+}
+
+#chart-demo {
+  margin-left: 35px;
+  margin: 0px auto;
+  align-items: center;
+  width: 92%;
+}
+
+#chart-demo dx-chart {
+  width: 92%;
+  height: 150px;
+}
+
+/* Fin del primer segmento */
+/* Segundo segmento */
+.table1 {
+  margin-top: 18px;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 410px;
+}
+
+.table1 thead {
+  font-size: 12px;
+  background: #E0E2EC;
+}
+
+.table1 th {
+  color: #54869C;
+}
+
+.table1 td {
+  font-size: 13px;
+  color: #78A2B2;
+}
+
+/* Fin del segundo segmento */
+/* Tercer Segmento */
+.tres {
+  height: 370px;
+}
+
+#chart {
+  margin-top: 15px;
+  margin: 0px auto;
+  width: 90%;
+  height: 370px;
+}
+
+/* Fin del tercer segmento */
+
+/*Ultimo Segmento*/
+.tabla4 {
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.tabla4 td,
+th {
+  padding-left: 15px;
+}
+
+.tabla4 table {
+  background: white;
+}
+
+.tabla4 thead {
+  background: #E0E2EC;
+}
+
+.tabla4 td {
+  font-size: 13px;
+  color: #6796A9;
+}
+
+.tabla4 th {
+  font-size: 12px;
+  color: #5F91A3;
+}
+
+.atras {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.atras select {
+  margin-left: 18px;
+  height: 36px;
+  width: 186px;
+}
+
+#seleccion {
+  color: #004F6D;
+  font-size: 14px;
+}
+
+/*Fin del Ultimo Segmento*/

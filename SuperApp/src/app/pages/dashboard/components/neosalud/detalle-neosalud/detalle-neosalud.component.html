@@ -1,0 +1,143 @@
+<div id="graficos">
+  <div class="grafico1">
+      <div class="tabla">
+          <h1 class="titulo">Soles</h1>
+          <table class="table table-borderless">
+              <thead>
+                  <tr>
+                      <th>MARCA</th>
+                      <th>M1</th>
+                      <th>M2</th>
+                      <th>M3</th>
+                      <th>M4</th>
+                      <th>M5</th>
+                      <th>M6</th>
+                      <th>M7</th>
+                      <th>M8</th>
+                      <th>M9</th>
+                      <th>M10</th>
+                      <th>M11</th>
+                      <th>M12</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>VOLUSOL</td>
+                      <td>11,831</td>
+                      <td>7,520</td>
+                      <td>6,258</td>
+                      <td>9,152</td>
+                      <td>10,587</td>
+                      <td>5,254</td>
+                      <td>6,874</td>
+                      <td>10,587</td>
+                      <td>11,854</td>
+                      <td>7,587</td>
+                      <td>6,587</td>
+                      <td>13,577</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <div id="chart-demo">
+          <dx-chart
+            palette="violet"
+            [dataSource]="architecturesInfo"
+            title="Soles">
+            <dxi-series valueField="mmp" name="MMP"></dxi-series>
+            <dxo-common-series-settings
+              #seriesSettings
+              argumentField="year"
+              [type]="types[0]"
+            >
+            </dxo-common-series-settings>
+            <dxo-margin [bottom]="20"></dxo-margin>
+            <dxo-common-axis-settings>
+              <dxo-grid [visible]="true"></dxo-grid>
+            </dxo-common-axis-settings>
+            <dxo-legend verticalAlignment="top" horizontalAlignment="right">
+            </dxo-legend>
+            <dxo-argument-axis [allowDecimals]="false" [axisDivisionFactor]="60">
+              <dxo-label>
+                <dxo-format type="decimal"></dxo-format>
+              </dxo-label>
+            </dxo-argument-axis>
+            <dxo-export [enabled]="true"></dxo-export>
+            <dxo-tooltip [enabled]="true"></dxo-tooltip>
+          </dx-chart>
+        </div>
+  </div>
+  <div class="grafico2">
+      <div class="tabla">
+          <h1 class="titulo">Unidades</h1>
+          <table class="table table-borderless">
+              <thead>
+                  <tr>
+                      <th>MARCA</th>
+                      <th>M1</th>
+                      <th>M2</th>
+                      <th>M3</th>
+                      <th>M4</th>
+                      <th>M5</th>
+                      <th>M6</th>
+                      <th>M7</th>
+                      <th>M8</th>
+                      <th>M9</th>
+                      <th>M10</th>
+                      <th>M11</th>
+                      <th>M12</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>VOLUSOL</td>
+                      <td>11,831</td>
+                      <td>7,520</td>
+                      <td>6,258</td>
+                      <td>9,152</td>
+                      <td>10,587</td>
+                      <td>5,254</td>
+                      <td>6,874</td>
+                      <td>10,587</td>
+                      <td>11,854</td>
+                      <td>7,587</td>
+                      <td>6,587</td>
+                      <td>13,577</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <div id="chart-demo2">
+          <dx-chart
+            palette="violet"
+            [dataSource]="architecturesInfo"
+            title="Unidades"
+          >
+          <dxi-series valueField="mmp" name="MMP"></dxi-series>
+            <dxo-common-series-settings
+              #seriesSettings
+              argumentField="year"
+              [type]="types[0]"
+            >
+            </dxo-common-series-settings>
+            <dxo-margin [bottom]="20"></dxo-margin>
+            <dxo-common-axis-settings>
+              <dxo-grid [visible]="true"></dxo-grid>
+            </dxo-common-axis-settings>
+            <dxo-legend verticalAlignment="top" horizontalAlignment="right">
+            </dxo-legend>
+            <dxo-argument-axis [allowDecimals]="false" [axisDivisionFactor]="60">
+              <dxo-label>
+                <dxo-format type="decimal"></dxo-format>
+              </dxo-label>
+            </dxo-argument-axis>
+            <dxo-export [enabled]="true"></dxo-export>
+            <dxo-tooltip [enabled]="true"></dxo-tooltip>
+          </dx-chart>
+        </div>
+  
+  
+  
+  </div>
+
+</div>

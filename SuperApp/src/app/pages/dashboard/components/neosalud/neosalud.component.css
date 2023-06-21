@@ -1,0 +1,135 @@
+#neosalud-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#head-table{
+    margin-left: 50px;
+    width: 636px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 18px;
+    justify-content: center;
+    font-size: 14px;
+}
+  
+#t-head{
+    margin-top:-35px;
+    height: 50px;
+    width: 400px;
+    margin-left: 32%;
+}
+  
+  #t-head table{
+    line-height: 90px;
+    padding-bottom:-50px;
+  }
+
+  #t-head th{
+    color: #246881;
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 29px;   }
+  
+  
+  #t-body{
+      font-size: 13px;
+    height: 33px;
+    margin-left: 21%;
+    justify-content: center;
+    border-radius: 18px;
+    background: #3ACC6E;
+    color: white;
+    width: 366px;
+    margin-bottom: 25px;
+  }
+  
+  #t-body table{
+    line-height: 33px;
+    margin: 12px;
+    width: 350px;
+    border-radius: 15px;
+  }
+  #t-body td{
+    padding-left: 10px;
+  }
+  
+  #t-body td:nth-child(1){
+    width: 30%;
+  }
+  #grafico-barras{
+      display: flex;
+    margin-left: 50px;
+    width: 636px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 18px;
+    justify-content: center;
+    font-size: 13px;
+    height: 300px;
+}
+    ::ng-deep #chart{
+    width: 570px;
+    height: 300px;
+}  
+
+#table-neosalud{
+    font-size: 13px;
+    overflow: hidden;
+    padding-bottom: -100px;
+    border-radius: 17px;
+    margin-left: 50px;
+    width: 636px;
+
+}
+
+#table-neosalud thead{
+    font-size: 12px;
+    font-weight:lighter;
+    color: #38738C;
+    background: #E0E2EC;
+}
+#table-neosalud td{
+    color: #6B98AA;
+}
+#table-neosalud table{
+    margin-bottom: -5px;
+
+    width: 100%;
+}
+
+#table-neosalud td,th{
+    padding-left: 40px;
+}
+#table-neosalud th:nth-child(1){
+    width: 35%;
+}
+#table-neosalud th:nth-child(4){
+    width: 20%;
+}
+
+.block{
+    display:none !important;
+}
+.block2{
+    display:block !important;
+}
+.graficos-detalle{
+    background: white;
+    width: 300px;
+    height: 460px;
+}
+.gd{
+    width: 5px;
+    height: 318px;
+}
+.pointer{
+    transition: all 200ms;
+    background: #D7F1F8;
+}
+
+#graficos-neosalud{
+    display: none;
+}

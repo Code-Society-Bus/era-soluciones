@@ -1,0 +1,292 @@
+<div id="table-d-perfil">
+
+    <div class="perfil">
+        <div class="table table-borderless cabezera bg-white">
+            <table>
+                <thead>
+                    <th><img style="margin-left: -50px;" src="../../../../../../assets/recursos/Group 719.png" alt="">
+                    </th>
+                    <th>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="mes" value="mes" [(ngModel)]="check">
+                            <label class="form-check-label color-azulmarino" for="inlineRadio1">MES</label>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="form-check form-check-inline">
+                            <input [(ngModel)]="check" class="form-check-input" type="radio" name="inlineRadioOptions"
+                                id="inlineRadio2" value="ytd" checked>
+                            <label class="form-check-label color-azulmarino" for="inlineRadio2">YTD</label>
+                        </div>
+                    </th>
+                </thead>
+            </table>
+        </div>
+
+        <!-- TABLA **MES** HEADER UNO -->
+        <div *ngIf="check == 'mes'" class="tableh1 bg-white animate__animated animate__fadeIn animate__fast">
+            <table class="table table-hover table-borderless ms-1">
+                <thead>
+                    <tr class="color-azulmarino">
+                        <th>MARCA</th>
+                        <th>SET.</th>
+                        <th>OCT.</th>
+                        <th>OCT.</th>
+                        <th><img src="../../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TOTAL</strong></td>
+                        <td>2727</td>
+                        <td>3411</td>
+                        <td>3733</td>
+                        <td>-0.00</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- END TABLE HEADER UNO MES -->
+        <!-- TABLA **YTD** HEADER UNO -->
+        <div *ngIf="check == 'ytd'" class="tableh1 bg-white ytd animate__animated animate__fadeIn animate__fast">
+            <table class="table table-hover table-borderless ms-1 ytd1">
+                <thead>
+                    <tr class="color-azulmarino">
+                        <th>MARCA</th>
+                        <th>YTD ANT</th>
+                        <th>YTD ACT</th>
+                        <th><img src="../../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TOTAL</strong></td>
+                        <td>2727</td>
+                        <td>3411</td>
+                        <td>3733</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- FIN TABLA **YTD** HEADER UNO -->
+        <!-- TABLA **MES** HEADER DOS -->
+        <div *ngIf="check == 'mes'" class="tableh2 bg-white animate__animated animate__fadeIn animate__fast">
+            <div class="ms-4 fondo">
+                <div class="contenido">
+                    <table class="table table-borderless ms-4 text-white">
+                        <thead>
+                            <tr>
+                                <th>MARCA</th>
+                                <th>SET.</th>
+                                <th>OCT.</th>
+                                <th>OCT.</th>
+                                <th><img src="../../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>TOTAL</strong></td>
+                                <td>2727</td>
+                                <td>3411</td>
+                                <td>3733</td>
+                                <td>-0.00</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!-- END TABLE HEADER DOS MES -->
+        <!-- TABLA **YTD** HEADER DOS -->
+        <div *ngIf="check == 'ytd'" class="tableh2 bg-white ytd animate__animated animate__fadeIn animate__fast">
+            <div class="ms-4 fondo">
+                <div class="contenido">
+                    <table style="margin-left: 40px !important;" class="table table-borderless ms-4 text-white">
+                        <thead>
+                            <tr>
+                                <th>MARCAAAAAAAAAAAAAAAAAAAAAAAAAAA</th>
+                                <th>YTD</th>
+                                <th>YTD</th>
+                                <th><img src="../../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>TOTAL</strong></td>
+                                <td>3412</td>
+                                <td>3733</td>
+                                <td>-0.00</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!--FIN TABLA **YTD** HEADER DOS -->
+        <!-- TABLA **MES** BODY -->
+        <div  class="tablebody">
+            <div *ngIf="check == 'mes'" class="tablebody2 bg-white animate__animated animate__fadeIn animate__fast">
+
+                <table class="table tableb table-hover table-borderless bg-white">
+                    <thead>
+                        <tr>
+                            <th>MARCA</th>
+                            <th>SET++</th>
+                            <th>OCT++</th>
+                            <th>OCT++</th>
+                            <th><img src="../../../../../../assets/recursos/Path 2386.png" alt=""> CREC+</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pt-3">ASSA 81 CRP </td>
+                            <td class="pt-3">25</td>
+                            <td class="pt-3">8</td>
+                            <td class="pt-3">24</td>
+                            <td class="pt-3 color-verde">0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">AZIMOL SR </td>
+                            <td class="pt-3">25</td>
+                            <td class="pt-3">8</td>
+                            <td class="pt-3">24</td>
+                            <td class="pt-3 color-rojo">-0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">AZIMOL DGT</td>
+                            <td class="pt-3">25</td>
+                            <td class="pt-3">8</td>
+                            <td class="pt-3">24</td>
+                            <td class="pt-3 color-rojo">-0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">Assa 81 CRP</td>
+                            <td class="pt-3">25</td>
+                            <td class="pt-3">8</td>
+                            <td class="pt-3">24</td>
+                            <td class="pt-3 color-verde">0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">Assa 81 CRP</td>
+                            <td class="pt-3">25</td>
+                            <td class="pt-3">8</td>
+                            <td class="pt-3">24</td>
+                            <td class="pt-3 color-verde">0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">Assa 81 CRP</td>
+                            <td class="pt-3">25</td>
+                            <td class="pt-3">8</td>
+                            <td class="pt-3">24</td>
+                            <td class="pt-3 color-verde">0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- END TABLE BODY MES -->
+            <!-- TABLA **YTD** BODY -->
+            <div *ngIf="check == 'ytd'" class="tablebody3 bg-white pt-4 ytd animate__animated animate__fadeIn animate__fast">
+                
+                <table class="table tableb table-hover table-borderless bg-white ytdb">
+                    <thead>
+                        <tr>
+                            <th>MARCA</th>
+                            <th>YTD ANT</th>
+                            <th>YTD ACT</th>
+                            <th><img src="../../../../../../assets/recursos/Path 2386.png" alt=""> CREC+</th>
+                            <th></th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pt-3">ASSA 81 CRP </td>
+                            <td class="pt-3">150</td>
+                            <td class="pt-3">206</td>
+                            <td class="pt-3 color-verde">0.37</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">ASSA 81 CRP </td>
+                            <td class="pt-3">150</td>
+                            <td class="pt-3">206</td>
+                            <td class="pt-3 color-verde">0.37</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">ASSA 81 CRP </td>
+                            <td class="pt-3">150</td>
+                            <td class="pt-3">206</td>
+                            <td class="pt-3 color-rojo">-0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">ASSA 81 CRP </td>
+                            <td class="pt-3">2450</td>
+                            <td class="pt-3">206</td>
+                            <td class="pt-3 color-verde">0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">ASSA 81 CRP </td>
+                            <td class="pt-3">150</td>
+                            <td class="pt-3">1506</td>
+                            <td class="pt-3 color-rojo">-0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3">ASSA 81 CRP </td>
+                            <td class="pt-3">150</td>
+                            <td class="pt-3">206</td>
+                            <td class="pt-3 color-verde">0.38</td>
+                            <td><img src="../../../../../../assets/recursos/flecha.png" alt=""></td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+                <!-- END TABLE YTD MES -->
+
+
+            </div>
+
+        </div>

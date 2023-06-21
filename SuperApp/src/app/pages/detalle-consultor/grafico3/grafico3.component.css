@@ -1,0 +1,7 @@
+::ng-deep #chart-demo {
+    width: 100%;
+    padding-left: 15%;
+  }
+  dx-chart{
+    height: 240px;
+  }

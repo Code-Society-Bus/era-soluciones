@@ -1,0 +1,59 @@
+<div class="opciones">
+  <div class="option">
+    <div class="t-option">
+      <h1>Resultados del ultimo mes de Gestion</h1>
+    </div>
+    <div class="options">
+      <p class="t-op">Ordenar por</p>
+      <select class="form-select" id="estado" (change)="changeSort()" [(ngModel)]="seleccionado">
+        <option *ngFor="let ordeno of ordenar">{{ordeno}}</option><i class="fas fa-caret-down"></i>
+      </select>
+    </div>
+  </div>
+</div>
+<br><br>
+<div>
+  <table id="t-head">
+    <th></th>
+    <th><strong>DDD</strong></th>
+    <th><strong>Receta</strong></th>
+    <th><strong>Cobertura</strong></th>
+    <th></th>
+  </table>
+  <table id="body">
+    <thead>
+      <tr>
+        <th class="ps-4 pb-3"><strong>Consultor</strong></th>
+        <th>Evo <br> Cont</th>
+        <th>Marcas<br>Cont</th>
+        <th>Crec% <br>no Cont</th>
+        <th>Marcas <br>no Cont</th>
+        <th>EVO</th>
+        <th>Marcas%</th>
+        <th>General</th>
+        <th>VIP</th>
+        <th>Nota</th>
+        <th>Rk</th>
+      </tr>
+    </thead>
+    <div class="division"> <div></div></div>
+    <tbody>
+      <ng-template ngFor let-item [ngForOf]="table_data?.data" let-i="index">
+        <tr class="c-pointer" (click)="goDashboard(item)">
+          <th class="azul ps-4">{{item.consultant}}</th>
+          <td class="arrow"><i class="fas fa-arrow-up"></i>{{item.ddd_evo_count}}</td>
+          <td>{{item.ddd_brand_count}}</td>
+          <td class="arrow"><i class="fas fa-arrow-up"></i>{{item.ddd_crec_no_count}}</td>
+          <td>{{item.recipe_brand_no_count}}</td>
+          <td class="arrow"><i class="fas fa-arrow-up"></i>{{item.recipe_evo}}</td>
+          <td>{{item.recipe_brands}}</td>
+          <td>{{item.coverage_general}}</td>
+          <td>{{item.coverage_vip}}</td>
+          <td>{{item.coverage_note}}</td>
+          <td>{{item.coverage_general}}</td>
+        </tr>
+      </ng-template>
+    </tbody>
+  </table>
+</div>
+<br><br>

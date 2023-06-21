@@ -1,0 +1,35 @@
+<div [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/dashboard']" ><a><h1 class="volver"><img src="../../../../assets/recursos/Group 470.png" alt=""> Volver al resumen del consultor</h1></a></div>
+<h2 class="subb">Actualizado: 16/Dic/2021</h2>
+<h2 class="subb mb-2">Periodo: Del 01/Jun/2021 la 17/Dic/2021</h2>
+<div id="sidebar">
+  <ul>
+    <li>
+      <strong>
+        <a [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/detail/recipes']">Recetas
+        </a>
+      </strong>
+    </li>
+    <!-- <li><strong><a [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/detail/ddd']">DDD</a> </strong></li> -->
+    <li>
+      <strong>
+        <a
+          [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/detail/neosalud']">Neosalud
+        </a>
+      </strong>
+    </li>
+    <li>
+      <strong>
+        <a
+          [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/detail/inretail']">Inretail
+        </a>
+      </strong>
+    </li>
+    <li>
+      <strong>
+        <a [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name +
+          '/detail/inbuild']">Build...
+        </a>
+      </strong>
+    </li>
+  </ul>
+</div>

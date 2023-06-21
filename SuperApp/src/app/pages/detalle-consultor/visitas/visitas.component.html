@@ -1,0 +1,135 @@
+<div id="user-options">
+    <app-useroptions></app-useroptions>
+</div>
+
+<div [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/dashboard']"><a>
+        <h1 class="volver"><img src="../../../../assets/recursos/Group 470.png" alt=""> Volver al resumen del consultor
+        </h1>
+    </a></div>
+<div class="contenido">
+    <div class="cabezera">
+        <div class="izquierda">
+            <div class="visitados">
+                <h2>Visitados</h2>
+                <h3>{{data?.visited?.visit_per_doctor}} de {{data?.visited?.objective_visits}}</h3>
+                <h4>Medicos</h4>
+                <img src="../../../../assets/recursos/Group 1156.png" alt="">
+            </div>
+            <div class="visitas bg-white">
+                <h2>Visitas</h2>
+                <h3> {{data?.visits?.carried_out}}</h3>
+                <h4>Totales</h4>
+            </div>
+            <div class="tipoVisita bg-white">
+                <h2>Tipo de Visita</h2>
+                <div class="tipe">
+                    <div>
+                        <img src="../../../../assets/recursos/Group 1122.png" alt="">
+                        <h3>{{data?.type_visits?.virtuals}}</h3>
+                    </div>
+                    <div>
+                        <img style="margin-top: -10px;" src="../../../../assets/recursos/Group 1155.png" alt="">
+                        <h3>{{data?.type_visits?.presentials}}</h3>
+                    </div>
+                </div>
+                <h4>Virtuales <span class="ms-5">Presenciales</span></h4>
+            </div>
+        </div>
+        <div class="derecha">
+            <div class="primero">
+                <h1><i class="fas fa-file-download"></i>DESCARGAR</h1>
+                <div class="input-group mb-3 rounded-pill">
+                    <span class="input-group-text bg-white" id="basic-addon1"><img
+                            src="../../../../assets/recursos/Group 1164.png" alt=""></span>
+                    <input type="text" class="form-control" placeholder="Buscar por Medico" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="segundo">
+                <div>
+                    <h1>Especialidades</h1>
+                    <select class="form-select select1" name="" id="">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div>
+                    <h1>Categorias</h1>
+                    <select class="form-select select2" name="" id="">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div>
+                    <h1>Tareas</h1>
+                    <select class="form-select select3" name="" id="">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="segundo tercero">
+                <div>
+                    <h1>Ordenar por:</h1>
+                    <select class="form-select select4" name="" id="">
+                        <option value="">A-Z por medico</option>
+                    </select>
+                </div>
+                <div>
+                    <h1>Mostrar</h1>
+                    <select class="form-select select5" name="" id="">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="orden">
+        <h1>25 de 100 resultados</h1>
+    </div>
+    <div class="body mt-3">
+        <table class="table table-borderless table-hover bg-white">
+            <thead>
+                <tr>
+                    <th>Médico</th>
+                    <th>Especialidad</th>
+                    <th>Categ.</th>
+                    <th>Tarea</th>
+                    <th class="C">C1</th>
+                    <th class="C">C2</th>
+                    <th class="C">C3</th>
+                    <th class="C">C4</th>
+                    <th class="C">C5</th>
+                    <th class="C">C6</th>
+                    <th class="C">C7</th>
+                    <th class="C">C8</th>
+                    <th class="C">C9</th>
+                    <th class="C">C10</th>
+                    <th class="C">C11</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <div class="division">
+                <div></div>
+            </div>
+            <tbody>
+                <tr *ngFor="let visita of visitas?.data">
+                    <td class="color-azul"> {{visita.Consultores}} </td>
+                    <td>{{visita.ESPECIALIDAD}} </td>
+                    <td class="color-azul">{{visita.categoria}}</td>
+                    <td>{{visita.TAREA}}</td>
+                    <td>{{visita.V_C1}}</td>
+                    <td>{{visita.V_C2}}</td>
+                    <td>{{visita.V_C3}}</td>
+                    <td>{{visita.V_C4}}</td>
+                    <td>{{visita.V_C5}}</td>
+                    <td>{{visita.V_C6}}</td>
+                    <td>{{visita.V_C7}}</td>
+                    <td>{{visita.V_C8}}</td>
+                    <td>{{visita.V_C9}}</td>
+                    <td>{{visita.V_C10}}</td>
+                    <td>{{visita.V_C11}}</td>
+                    <td class="color-azul"><strong>{{visita.Total_YTD}}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

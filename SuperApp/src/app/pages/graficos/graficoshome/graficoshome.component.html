@@ -1,0 +1,37 @@
+<div id="graficos">
+  <div id="pie">
+    <h1>Supervisor<span>Equipo</span></h1>
+    <div class="skills-container">
+      <div class="circular-progress html"></div>
+      <div class="circular-progress css"></div>
+      <div class="circular-progress javascript"></div>
+    </div>
+  </div>
+  <div id="tabla">
+    <div class="long-title">
+      <h1>Tendencias</h1>
+    </div>
+    <div id="chart-demo">
+      <dx-chart [dataSource]="summary.graphics?.trends">
+        <dxi-series valueField="coverage_general" name="General" color="#7F2FAC"></dxi-series>
+        <dxi-series valueField="coverage_vip" name="VIP" color="#52E085"></dxi-series>
+        <dxi-series valueField="coverage_additional" name="Adicional" color="#009CDE"></dxi-series>
+        <dxo-common-series-settings #seriesSettings argumentField="label" [type]="types[0]">
+        </dxo-common-series-settings>
+        <dxo-margin [bottom]="20"></dxo-margin>
+        <dxo-common-axis-settings>
+          <dxo-grid [visible]="true"></dxo-grid>
+        </dxo-common-axis-settings>
+        <dxo-legend verticalAlignment="top" horizontalAlignment="right">
+        </dxo-legend>
+        <dxo-argument-axis [allowDecimals]="false" [axisDivisionFactor]="60">
+          <dxo-label>
+            <dxo-format type="decimal"></dxo-format>
+          </dxo-label>
+        </dxo-argument-axis>
+        <dxo-export [enabled]="true"></dxo-export>
+        <dxo-tooltip [enabled]="true"></dxo-tooltip>
+      </dx-chart>
+    </div>
+  </div>
+</div>

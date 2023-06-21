@@ -1,0 +1,115 @@
+
+<div id="resumen">
+    <div id="head-table">
+        <div id="t-head">
+            <table>
+                <th> </th>
+                <th>YTD ANT.</th>
+                <th>YTD ACT.</th>
+                <th>%MS ANT</th>
+                <th>%MS ACT</th>
+                <th>EVO ACT.</th>
+            </table>
+        </div>
+
+        <div id="t-body">
+            <table>
+                <tr>
+                    <td><strong>TOTAL DE TU LINEA</strong> </td>
+                    <td>2785</td>
+                    <td>3144</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td><strong>100 <i class="fas fa-arrow-up" style="height: 14px !important; font-weight: bold;"></i></strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div id="body-tables">
+        <div class="item1">
+            <table class="table table-hover table-borderless">
+                <thead>
+                    <tr>
+                        <th><img src="../../../../../../assets/recursos/Group 1075.png" alt=""><p>MERCADOS</p></th>
+                        <th>YTP <p>ACT.</p>
+                        </th>
+                        <th>YTD <p>ACT.</p>
+                        </th>
+                        <th>%MS <p>ANT.</p>
+                        </th>
+                        <th>%MS <p>ACT.</p>
+                        </th>
+                        <th>EVO <p>ACT.</p>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let tabla1 of mercado">
+                        <td>{{tabla1.clasecod}}</td>
+                        <td>{{tabla1.YTD_ANT_MED}}</td>
+                        <td>{{tabla1.YTD_ACT_MED}}</td>
+                        <td>{{tabla1.MS_ANT_MED}}</td>
+                        <td>{{tabla1.MS_ACT_MED}}</td>
+                        <td class="arrow"><i class="fas fa-arrow-up"></i>{{tabla1.EVO_MED}}</td>
+                        <td><i class="fas fa-chevron-right"></i></td>
+                    </tr>
+
+                    <!-- <tr>
+                        <td>N07X0</td>
+                        <td>2785</td>
+                        <td>3144</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td class="arrow-red"><i class="fas fa-arrow-down"></i>100</td>
+                        <td><i class="fas fa-chevron-right"></i></td>
+                    </tr>
+                -->
+                </tbody>
+
+            </table>
+        </div>
+
+
+
+        <div class="item2">
+            <table class="table table-hover table-borderless">
+                <thead>
+                    <tr>
+
+                        <th><div class="img"><img src="../../../../../../assets/recursos/mercados icon.png" alt=""></div>
+                            <p>MARCAS</p> </th>
+                        <th>YTP <p>ACT.</p>
+                        </th>
+                        <th>YTD <p>ACT.</p>
+                        </th>
+                        <th>%MS <p>ANT.</p>
+                        </th>
+                        <th>%MS <p>ACT.</p>
+                        </th>
+                        <th>EVO <p>ACT.</p>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let tabla2 of marcas">
+                        <td>{{tabla2.prodnom}}</td>
+                        <td>{{tabla2.YTD_ANT_PROD}}</td>
+                        <td>{{tabla2.YTD_ACT_PROD}}</td>
+                        <td>{{tabla2.MS_ANT_PROD}}</td>
+                        <td>{{tabla2.MS_ACT_PROD}}</td>
+                        <td class="arrow"><i class="fas fa-arrow-up"></i>{{tabla2.EVO_PROD}}</td>
+                        <td><i class="fas fa-chevron-right"></i></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+
+</div>

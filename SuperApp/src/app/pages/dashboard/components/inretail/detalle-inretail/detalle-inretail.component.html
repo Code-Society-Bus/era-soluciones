@@ -1,0 +1,158 @@
+<div id="table-perfil">
+  <div class="perfil">
+    <div class="atras">
+      <div>
+        <img src="../../../../../../assets/recursos/Group 470.png" alt="">
+      </div>
+      <select name="" class="form-select" id="seleccion">
+        <option *ngFor="let marca of marcas"><p>{{marca.MARCA_IMS}}</p></option>
+
+      </select>
+    </div>
+    <div class="sec uno">
+      <div class="sec1">
+        <div class="headt">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th></th>
+                <th>YTD ANT</th>
+                <th>YTD ACT</th>
+                <th><img src="../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="headb">
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td><strong>TOTAL</strong></td>
+                <td>27,584</td>
+                <td>28,741</td>
+                <td><i style="color:white" class="fas fa-arrow-up"></i><strong>8.1%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sec2">
+        <div id="chart-demo">
+          <dx-chart palette="Violet" [dataSource]="countriesInfo">
+            <dxi-series *ngFor="let energy of energySources" [valueField]="energy.value" [name]="energy.name">
+            </dxi-series>
+            <dxo-common-series-settings #seriesSettings argumentField="country" [type]="types[0]">
+            </dxo-common-series-settings>
+            <dxo-margin [bottom]="20"></dxo-margin>
+            <dxo-argument-axis [valueMarginsEnabled]="false" discreteAxisDivisionMode="crossLabels">
+              <dxo-grid [visible]="true"></dxo-grid>
+            </dxo-argument-axis>
+            <dxo-legend verticalAlignment="bottom" horizontalAlignment="center" itemTextPosition="bottom">
+            </dxo-legend>
+            <dxo-title text=".">
+              <dxo-subtitle text="Tendencia general de los ultimos 6 meses (soles)"> </dxo-subtitle>
+            </dxo-title>
+            <dxo-export [enabled]="true"></dxo-export>
+            <dxo-tooltip [enabled]="true"></dxo-tooltip>
+          </dx-chart>
+        </div>
+      </div>
+
+    </div>
+    <div class="table1">
+      <table class="table table-borderless bg-white table-hover">
+        <thead>
+          <tr>
+            <th>
+              <img src="../../../../../assets/recursos/711170.png" alt="">
+              DISTRITO
+            </th>
+            <th>YTD ANT</th>
+            <th>YTD ACT</th>
+            <th><img src="../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let distrito of distritos">
+          <tr>
+            <td>
+              {{distrito.distrito}}
+            </td>
+            <td>{{distrito.YTD_ANT | number}}</td>
+            <td>{{distrito.YTD_ACT | number}}</td>
+            <td style="color: red; font-weight: bold;">
+              <img src="../../../../../assets/recursos/Group 1130.png" alt="">
+              {{distrito.CREC | number}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="sec tres">
+      <div class="barras">
+        <dx-chart id="chart" [dataSource]="distritos" (onPointClick)="onPointClick($event)">
+          <dxi-series valueField="YTD_ANT" name="YTD_ANT" color="#009CDE"></dxi-series>
+          <dxi-series valueField="YTD_ACT" name="YTD_ACT" color="#ABE8F7"></dxi-series>
+
+          <dxo-common-series-settings argumentField="distrito" type="bar" hoverMode="allArgumentPoints"
+            selectionMode="allArgumentPoints">
+            <dxo-label [visible]="true" [format]="{
+                      type: 'fixedPoint',
+                      precision: '0'
+                    }">
+            </dxo-label>
+          </dxo-common-series-settings>
+          <dxo-legend verticalAlignment="bottom" horizontalAlignment="center">
+          </dxo-legend>
+          <dxo-export [enabled]="true"></dxo-export>
+        </dx-chart>
+      </div>
+    </div>
+    <div class="cuatro">
+      <div class="tabla4">
+        <table class="table table-borderless table-hover">
+          <thead>
+            <tr>
+              <th>LOCALES</th>
+              <th>YTD ANT</th>
+              <th>YTD ACT</th>
+              <th><img src="../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+              <th>MES ANT</th>
+              <th>MES ACT</th>
+              <th><img src="../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+              <th>DREM <br> PROM 6M</th>
+              <th>INV</th>
+              <th>MESES</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let mercado of mercados">
+            <tr>
+              <td>{{mercado.CT}}</td>
+              <td>{{mercado.YTD_ANT | number}}</td>
+              <td>{{mercado.YTD_ACT | number}}</td>
+              <td style="color:#49D079;">
+                <img src="../../../../../../assets/recursos/Group 816.png" alt="">
+                <strong>
+                  {{mercado.CREC_YTD | number}}
+                </strong>
+              </td>
+              <td>{{mercado.MES_ANT | number}}</td>
+              <td>{{mercado.MES_ACT | number}}</td>
+              <td style="color: red;">
+                <img src="../../../../../../assets/recursos/Group 1130.png" alt="">
+                <strong>
+                  {{mercado.CREC_MES}}
+                </strong>
+              </td>
+              <td>{{mercado.EVO_MES | number}}</td>
+              <td>{{mercado.CREC_YTD | number}}</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<br><br><br><br>

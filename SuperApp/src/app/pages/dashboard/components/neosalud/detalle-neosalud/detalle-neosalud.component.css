@@ -1,0 +1,47 @@
+#graficos{
+    margin-top: 10px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grafico1{
+    flex-basis: 80%;
+    width: 532px;
+height: 50px !important;
+}
+.grafico2{
+    flex-basis: 80%;
+    width: 532px;
+height: 50px !important;
+}
+::ng-deep .option > .dx-widget {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  ::ng-deep dx-chart {
+
+    font-weight: bold;
+    width: 532px;
+    height: 110px;
+  }
+  .titulo{
+      font-weight: bold;
+      font-size:13px;
+  }
+
+  .tabla{
+      font-size: 9px;
+  }
+  .tabla thead{
+      color: white;
+  }
+  .tabla th{
+      height: 1px;
+      border: 1px solid #F8F8F4;
+      background: #8064A2;
+  }
+  .tabla td{
+    border: 1px solid #F8F8F4;
+  }

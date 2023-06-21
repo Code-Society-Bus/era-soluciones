@@ -1,0 +1,118 @@
+/* Ajustes Generales */
+*{
+    text-decoration: none;
+}
+
+#table-d-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    #table-d-perfil .perfil {
+    margin-left: 50px;
+    flex-basis: 57%;
+}
+
+table{
+    font-size: 12px;
+}
+td{
+    font-size: 13px;
+    transition: 400ms all;
+}
+
+/***** Cabezera */
+/* First */
+.iconos{
+    border-radius: 17px 17px 0px 0px;
+}
+.perfil button {
+    border-radius: 14px;
+    margin-left: 10px;
+    font-size: 13px;
+    height: 21px;
+}
+button p{
+    margin-top: -6px;
+}
+/* Second */
+.tableh1{
+    overflow: hidden;
+    height: 40px;
+}
+.tableh1 table{
+    width: 720px;
+}
+
+/* Third */
+
+.tableh2{
+    height: 56px;
+    overflow: hidden;
+}
+.fondo{
+    border-radius: 17px;
+    border: 1px solid #3ACC6E;
+    width: 700px;
+    height: 35px;
+    background: #3ACC6E;
+
+}
+.contenido{
+    border-radius: 17px;
+    margin-top: -34px;
+}
+.tableh2 table{
+    width: 720px;
+}
+
+/***** Cuerpo */
+
+.tablebody{
+    background: #F5F6FA;
+    overflow: hidden;
+}
+.tablebody table{
+    margin-top: -40px;
+    width: 720px;
+}
+.tablebody td {
+    color: #6292A5;
+}
+
+.tablebody2{
+    border-radius: 0px 0px 17px 17px;
+    background: #F5F6FA;
+    overflow: hidden;
+}
+.tablebody2 table{
+    margin-top: -40px;
+    width: 720px;
+}
+.tablebody2 td {
+    color: #6292A5;
+}
+
+/* Color */
+.bg-azul{
+    background: #009CDE;
+}
+
+.bg-azul-claro{
+    background: #D7F1F8;
+}
+.color-verde{
+    color:#3ACC6E !important;
+}
+.color-azul{
+    color:#009CDE !important;
+}
+.color-azulmarino{
+    color: #1F647F;
+}
+.border-azul{
+    border:1px solid #009CDE;
+}
+.blanco{
+    color: white !important;
+}

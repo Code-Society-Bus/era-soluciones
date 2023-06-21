@@ -1,0 +1,25 @@
+.navbar{
+    position: sticky;
+    border-radius: 5px;
+}
+
+.card{
+    max-width: 300px; 
+    max-height: 60px; 
+    border: none;
+}
+#card-cont{
+    max-height: 40px; 
+    max-width: 40px; 
+    border-radius: 99999px; 
+    margin-top: 3px;
+}
+#card-cont-2{
+    max-height: 55px; 
+    margin-top:-10px; 
+    padding-bottom: -15px;
+}
+.card-body p{
+    margin-top: -10px;
+    font-size: 12px;
+}

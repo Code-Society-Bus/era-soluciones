@@ -1,0 +1,104 @@
+#table-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    #table-perfil .perfil {
+        margin-left: 50px;
+    flex-basis: 57%;
+    }
+    #head{
+        border-radius: 18px;
+        overflow: hidden;
+        margin-bottom: -16px;
+    }
+    td{
+        transition: 400ms all;
+    }
+    #head thead{
+        background: #E0E2EC;
+    }
+    #head th:nth-child(1){
+        width: 60%;
+    }
+
+    .radiobutton{
+        color: #6A94A9;
+        font-size: 12px;
+    }
+    .radiobutton label,input{
+        transition: 300ms all;
+        cursor: pointer;
+    }
+    .radiobutton label:hover{
+        color: #37ADE1;
+    }
+ 
+ 
+    
+    #body{
+        margin-top: -30px;
+    }
+    #body thead{
+        background: #E0E2EC;
+    }
+    #body{
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        overflow: hidden;
+    }
+    #body th{
+        font-weight: 500;
+        color: #37738C;
+        font-size: 12px;
+    }
+    #body svg{
+        color: #4C8399;
+    }
+    
+    #body td{
+        color: #77A0B1;
+        border-bottom: 1px solid #ECECEC;
+    }
+    
+    #body td , th{
+        padding-left: 50px;
+    }
+    
+    #body td:nth-child(1){
+        width: 25%;
+    }
+
+    
+        
+    .bg-azul-claro{
+        background: #D7F1F8;
+    }
+    
+    .arrow {
+        color: #3ACC6E !important;
+      }
+      .arrow-red {
+        color: red !important;
+      }
+    
+      .butonm{
+          margin-left: -10px;
+          width: 100%;
+      }
+      .buton{
+          transition: 300ms all;
+          box-shadow: 1px 1px #137ca5;
+          border:none;
+          border-radius: 3px;
+          color: white;
+          background: #004F6D;
+          width: 60px;
+          font-size: 11px;
+          height: 16px;
+      }
+      .buton:hover{
+        background: #137ca5 !important;
+      }

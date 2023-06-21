@@ -1,0 +1,198 @@
+<br><br>
+<div id="body-info">
+  <div class="section-uno">
+    <div style="display:flex; box-shadow: none;">
+      <div class="first bg-blue me3 mb3 text-center">
+        <h1 class="pt-2">EVO ultimo mes</h1>
+        <span class="data">
+          <strong class="separar arrow-red"><i class="fas fa-arrow-down"></i>{{data?.evo_last_month?.ddd}}</strong>
+        </span>
+        <span class="data arrow">
+          <strong><i class="fas fa-arrow-up"></i>{{data?.evo_last_month?.rx}}</strong>
+        </span>
+        <br>
+        <p class="sub colorazul"  style="margin-bottom: 8px;"> DDD <span class="separarn">Rx</span></p>
+        <img class="ms-5" src="../../../../assets/recursos/barras.png" alt="">
+      </div>
+      <div class="first bg-mostaza izquierda">
+        <h1 class="pt-2 ps-3">Cobertura</h1>
+        <span class="data ps-2"><strong class="separar strong">{{data?.coverage?.general}}</strong> </span><span
+          class="data"><strong class="strong">{{data?.coverage?.aditional}}</strong></span>
+
+        <p class="sub color-azulmarino ps-3">General <span class="ms-4">Adicional</span></p>
+        <img style="margin-left: 110px; margin-bottom: 5px;" src="../../../../assets/recursos/arco.png" alt="">
+      </div>
+    </div>
+    <div style="display:flex; box-shadow: none;">
+      <div class="first bg-verde-claro me3">
+        <h1 class="izquierda ps-3">Nota</h1>
+        <span class="data izquierda ps-3"><strong class="izquierda note">{{data?.note}}</strong> </span>
+        <p class="sub ps-3 t-verde izquierda">Ultimo mes <img style="margin-left: 85px; margin-top: -5px;"
+            src="../../../../assets/recursos/Group 1153.png"></p>
+      </div>
+      <div class="first bg-purpura">
+        <h1 class="izquierda ps-3">Emails</h1>
+        <p class="data izquierda ps-3"><strong>{{data?.mails_sent}}</strong> </p>
+        <p class="sub alinear izquierda ps-3" style="color:#873DB1;">Enviados</p>
+        <img style="margin-left: 73px; margin-top: -22px;" src="../../../../assets/recursos/Group -7.png">
+      </div>
+
+    </div>
+
+  </div>
+  <div class="section-dos me3">
+    <div [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/dashboard/visitas']"
+      class="pointer second bg-white mb3">
+      <h1 class="pt-2 ps-3">Visitas</h1>
+      <h1 class="sub text-right color-azulmarino" style="margin-left: 150px; margin-top: -12px; margin-bottom:15px;">Objetivo</h1>
+      <h1 class="alinear" style="margin-left: 150px;"><span class="data"><strong>{{data?.visits?.objective}}</strong></span>
+      </h1>
+      <div class="progress ms-3">
+        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h1><span class="ps-3 sub colorazul pe-5">Realizadas</span> <span class="data colorazul sub"><strong>{{data?.visits?.done}}</strong></span>
+      </h1>
+    </div>
+    <div [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/dashboard/visitas']"
+      class="pointer second bg-white">
+      <h1 class="pt-2 ps-3">Tipo de visita</h1>
+      <p class="ps-3">
+        <img class="separarx" src="../../../../assets/recursos/Group 1122.png"> <span><img
+            src="../../../../assets/recursos/Group 1155.png"></span>
+      </p>
+      <p class="alinear data ps-4">
+        <strong class="separarx">{{data?.type_visits?.virtuals}}</strong>
+        <strong>{{data?.type_visits?.presentials}}</strong>
+      </p>
+      <p class="sub alinear bg-gray-ligth ps-4">Virtuales <span class="separarn bg-gray-ligth">Presenciales</span> </p>
+    </div>
+  </div>
+  <div [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/dashboard/entregaMM']"
+    class="pointer me3">
+    <div class="mb3 tres bg-verde-claro izquierda">
+      <h1 class="pt-2 ps-3">Entrega de MM</h1>
+      <p class="data ps-3"><strong>{{data?.delivery?.visits}}</strong></p>
+      <p class="sub alinear ps-3 t-verde">En visitas</p>
+      <p class="data ps-3"><strong>{{data?.delivery?.stock}}</strong> </p>
+      <p class="sub alinear ps-3 t-verde">Del stock</p>
+    </div>
+    <div class="cuatro bg-white">
+      <h1 class="pt-2 ps-3">Motivo NO visita</h1>
+      <p class="data ps-3"><strong>{{data?.motive_not_visits}}</strong></p>
+      <p class="alinear bg-gray-ligth ps-3 sub">Sin registrar</p>
+    </div>
+  </div>
+  <div>
+    <div class="cinco bg-verde-claro izquierda mb3">
+      <h1 class="pt-2 ps-2">N°HCP'S TGT</h1>
+      <p class="data ps-2"><strong>{{data?.comments_bi_sfe}}</strong></p>
+      <p class="ps-2 sub alinear t-verde">Medicos</p>
+      <img style="margin-top: -10px; margin-left: 65px;" src="../../../../assets/recursos/Group 1156.png" alt="">
+    </div>
+    <div class="cinco bg-verde-claro">
+      <h1 class="pt-2 ps-3">Cortesia</h1>
+      <p class="data ps-3"><strong>{{data?.additional_courtesy}}</strong></p>
+      <p class="sub ps-3 alinear t-verde">Adicionales</p>
+    </div>
+  </div>
+</div>
+
+<!-- ******************************************************************Graficos Home -->
+<div class="graficos home bg-white">
+
+  <div id="graficos-home">
+    <div id="pie">
+      <h1>Equipo</h1>
+      <div class="skills-container">
+        <div class="circular-progress css"></div>
+        <div class="circular-progress javascript"></div>
+      </div>
+    </div>
+    <div id="tabla">
+      <div class="long-title">
+        <h3>Tendencias</h3>
+      </div>
+      <div id="chart-demo">
+        <dx-chart class="chart" [dataSource]="architecturesInfo">
+          <dxi-series valueField="smp" name="SMP" color="#7F2FAC"></dxi-series>
+          <dxi-series valueField="mmp" name="MMP" color="#52E085"></dxi-series>
+          <dxi-series valueField="cnstl" name="Cnstl" color="#009CDE"></dxi-series>
+          <dxo-common-series-settings #seriesSettings argumentField="year" [type]="types[0]">
+          </dxo-common-series-settings>
+          <dxo-margin [bottom]="20"></dxo-margin>
+          <dxo-common-axis-settings>
+            <dxo-grid [visible]="true"></dxo-grid>
+          </dxo-common-axis-settings>
+          <dxo-legend verticalAlignment="top" horizontalAlignment="right">
+          </dxo-legend>
+          <dxo-argument-axis [allowDecimals]="false" [axisDivisionFactor]="60">
+            <dxo-label>
+              <dxo-format type="decimal"></dxo-format>
+            </dxo-label>
+          </dxo-argument-axis>
+          <dxo-export [enabled]="true"></dxo-export>
+          <dxo-tooltip [enabled]="true"></dxo-tooltip>
+        </dx-chart>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- ************************************************************Fin Graficos Home -->
+<!-- Graficos 1 -->
+<div class="graficos g1">
+  <nav>
+    <ul class="d-flex flex-row menu-item">
+      <li #primernav class="btn p-3"><a>DDD Contratadas</a> </li>
+      <li #segundonav class="btn p-3 separarn"> <a>DDD Bricks</a></li>
+    </ul>
+    <hr>
+  </nav>
+  <app-grafico1></app-grafico1>
+</div>
+<div>
+  <button class="btn bg-transparent border-info text-info button-mas ">Ver mas</button>
+</div>
+
+<!-- Grafico 2 -->
+<div class="graficos bg-white">
+  <nav>
+    <ul class="d-flex flex-row menu-item">
+      <li class="btn p-3"><a >Recetas Marcas</a> </li>
+      <li class="btn p-3 separarn"> <a>Recetas</a></li>
+    </ul>
+    <hr>
+  </nav>
+  <app-grafico2></app-grafico2>
+  <div>
+    <button class="btn bg-transparent border-info text-info button-mas2 ">Ver mas</button>
+  </div>
+</div>
+<!-- Grafico 3 -->
+<div class="graficos bg-white g3">
+  <nav>
+    <ul class="d-flex flex-row menu-item">
+      <li class="btn p-3"><a>InRetail</a> </li>
+      <li class="btn p-3 separarn"> <a>NeoSalud</a></li>
+    </ul>
+    <hr>
+  </nav>
+  <div class="row">
+    <div  class="col-9">
+      <app-grafico3></app-grafico3>
+    </div>
+    <div class="col-1 m-2 first bg-verde-claro div-grafica3">
+      <h1 class="izquierda pt-3">Nota</h1>
+      <span class="data izquierda"><strong>18</strong> </span>
+      <p class="sub t-verde izquierda">Ultimo mes <img style="margin-left: 85px; margin-top: -22px;"
+          src="../../../../assets/recursos/Group 1153.png"></p>
+    </div>
+
+  </div>
+
+  <div>
+    <button class="btn bg-transparent border-info text-info button-mas3 ">Ver mas</button>
+  </div>
+
+
+</div>

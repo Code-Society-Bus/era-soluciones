@@ -1,0 +1,265 @@
+#user-options{
+    display: flex;
+    justify-content: center;
+}
+.volver{
+    width: 250px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #004F6D;
+}
+.volver img{
+    margin-right: 6px;
+}
+.contenido{
+    padding-top: 20px;
+    width: 1088px;
+    height: 100px;
+   margin: 0px auto;
+}
+
+/* Cabezera */
+.cabezera{
+    display: flex;
+    flex-direction: row;
+}
+
+.izquierda{
+    display: flex;
+    flex-direction: row;
+   width: 450px;
+   justify-content: space-between;
+}
+.izquierda div{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.visitados{
+    background: #E2FFEC;
+    width: 103px;
+    height: 125px;
+}
+.visitados h2{
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #004F6D;
+}
+.visitados h3{
+    margin-top: 20px;
+    padding-left: 10px;
+    color: #004F6D;
+    font-size: 14px;
+    font-weight: bold;
+}
+.visitados h4{
+    margin-top: -5px;
+    padding-left: 10px;
+    color: #00B140;
+    font-size: 11px;
+}
+.visitados img{
+    margin-left: 60px;
+}
+.visitas{
+    width: 103px;
+    height: 125px;
+}
+.visitas h2{
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #004F6D;
+}
+.visitas h3{
+    padding-left: 10px;
+    color: #004F6D;
+    font-size: 24px;
+}
+.visitas h4{
+    margin-top: -5px;
+    padding-left: 10px;
+    font-size: 11px;
+    color: #E0E2EC;
+}
+.tipoVisita{
+    width: 220px;
+    height: 125px;
+}
+.tipoVisita h2{
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #004F6D;
+}
+.tipoVisita img{
+    padding-left: 10px;
+}
+.tipoVisita h3 {
+    padding-left: 10px;
+    color: #004F6D;
+    font-size: 24px;
+}
+.tipoVisita h4{
+    margin-top: -7px;
+    padding-left: 10px;
+    font-size: 11px;
+    color: #E0E2EC;
+}
+
+.tipe{
+    box-shadow: none !important;
+    width: 100%;
+    display: flex;
+}
+.tipe div{
+    box-shadow: none !important;
+    flex-basis: 50%;
+}
+/* ************************* */
+.derecha{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+.rounded-pill{
+    margin-left: 146px;
+    align-items:flex-end;
+    width: 386px;
+    height: 36px;
+    border: 1px solid #CED4DA !important;
+    overflow: hidden;
+    border-radius: 25px !important;
+}
+.rounded-pill span{
+    height: 36px;
+    line-height: 36px;
+}
+.rounded-pill input{
+    height: 36px;
+    line-height: 36px;
+}
+.rounded-pill ::placeholder{
+    color: #E0E2EC;
+}
+.derecha .primero{
+    display: flex;
+    *justify-content: space-around;
+    flex-direction: row;
+}
+.primero h1{
+    color: #004F6D;
+    font-size: 14px;
+}
+.primero svg{
+    margin-left:10px;
+    padding-right: 5px;
+    height: 21px;
+    width: 15px;
+    color: #009CDE;
+}
+
+.segundo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.segundo select{
+    height: 36px !important;
+    margin-left: 5px;
+    color: #004F6D !important;
+    font-size: 14px;
+}
+.segundo h1{
+    margin-bottom: -1px;
+    color: #009CDE;
+    font-size: 14px;
+}
+.select1 {
+    width: 229px;
+    height: 36px;
+}
+.select2{
+    width: 166px;
+    height: 36px;
+}
+.select3{
+    width: 101px;
+    height: 36px;
+}
+.tercero{
+    margin-top: 30px;
+}
+.select4{
+    width: 166px;
+    height: 36px;
+}
+.select5{
+    width: 82px;
+    height: 36px;
+}
+.orden{
+    margin-top: -19px;
+}
+.orden h1{
+    color: #004F6D;
+    font-size: 14px;
+}
+/* Fin de Cabezera */
+
+/* body */
+.division{
+    width: 10px !important; 
+    height: 8px;
+}
+.division div{
+    width: 1088px; 
+    height: 8px; 
+    background: #EDEEF2;
+}
+.body{
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+.C{
+    font-weight: 400;
+}
+.body table {
+    margin-bottom: -3px !important;
+}
+.body th,td{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.body thead{
+    background: #E0E2EC;
+    color: #004F6D;
+}
+.body th{
+    padding-bottom: 30px;
+}
+.body td{
+    color: #004F6DB3;
+}
+.body td:nth-child(4)
+{
+    width: 15%;
+}
+.body td:nth-child(1)
+{
+    width: 17%;
+}
+.body td:nth-child(2)
+{
+    width: 14%;
+}
+.color-azul{
+    color: #009CDE !important;
+}

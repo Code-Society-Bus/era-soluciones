@@ -1,0 +1,55 @@
+<div id="card-doctor" class="card mb-3" style="max-width: 600px; max-height: 80px;" (click)="listar()">
+  <div>
+    <div class="item-card row g-0">
+      <div id="img-doctor" class="col-md-4">
+        <img src="../../../../assets/img/mujer.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title"><div class="svg"><i class="fas fa-sort-down"></i></div>{{generalService.generic_data?.consultant.consultant}}</h5>
+          <p class="card-text">
+            <small class="text-muted">
+              <span class="span">Status: {{generalService.generic_data?.consultant.consultant_data.status}}</span>
+              <span>Linea: {{generalService.generic_data?.consultant.consultant_data.line}}</span>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ul #lista id="lista" class="animate__animated animate__fadeIn animate__fast">
+  <ng-template ngFor let-item [ngForOf]="supervisor" let-i="index">
+    <li class="c-pointer" (click)="selectItem(item)">
+      <div id="card-doctor2" class="card mb-3" style="max-width: 600px; max-height: 80px;">
+        <div>
+          <div class="item-card row g-0">
+            <div id="img-doctor2" class="col-md-4">
+              <!-- <img src="../../../../assets/img/mujer.png"  alt="..."> -->
+              <img src="https://via.placeholder.com/150x150"class="img-fluid rounded-start" alt="placeholder" />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">{{item.full_name}}</h5>
+                <p class="card-text">
+                  <small class="text-muted">
+                    <span class="span">Status: {{item.status}}
+                    </span>
+                    <span>Linea: {{item.line}}</span>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ng-template>
+</ul>
+
+<!-- <select class="form-select">
+      <option value="">
+          {{generalService.generic_data?.consultant.consultant}}
+      </option>
+       <option *ngFor="let item of supervisor">{{item.full_name}}</option>
+    </select> -->

@@ -1,0 +1,12 @@
+<div class="principal">
+  <aside class="uno">
+    <!-- <app-useroptions id="user-options"></app-useroptions> -->
+    <app-useroptions id="user-options" (valueChange)="updateConsultor($event)"></app-useroptions>
+    <app-sidebar></app-sidebar>
+  </aside>
+  <app-body #bodyComponent class="dos">
+  </app-body>
+</div>
+
+<!-- <app-nav-dashboard></app-nav-dashboard>
+<app-useroptions id="user-options"></app-useroptions> -->

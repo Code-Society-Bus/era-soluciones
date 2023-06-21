@@ -1,0 +1,41 @@
+<br>
+<h1 id="volver" class="c-pointer" [routerLink]="['']">
+  <i class="me-2 fas fa-arrow-left"></i> Volver al home
+</h1>
+<div id="aside">
+  <div id="imagen-cliente">
+    <img src="../../../../assets/img/mujer.png" alt="">
+  </div>
+  <button class="btn" id="sia"
+    [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/dashboard-nav']">Ver
+    Detalle del
+    consultor</button>
+  <p>
+    <br>
+    <a class="btn btn-primary bg-plomo" data-bs-toggle="collapse" href="#collapseExample" role="button"
+      aria-expanded="false" aria-controls="collapseExample">
+      Comentarios
+    </a>
+  </p>
+  <div>
+    <!-- <div class="collapse" id="collapseExample"> -->
+    <div class="card card-body">
+      Some placeholder content for the collapse component.
+      <p class="fecha">10/10/1010 <span>15:34</span> </p>
+      This panel is hidden by default but revealed when t.
+      <p class="fecha bg-gray-500">10/10/1010 <span>15:34</span> </p>
+    </div>
+  </div>
+  <br>
+  <div class="inputt azul-claro">
+    <div class="content-input">
+      <input type="text" class="col-5 form-control azul-claro" placeholder="Escribe aqui.." />
+      <i class="far fa-paper-plane col-2"></i>
+    </div>
+  </div>
+ 
+  <button class="btn btn-primary bg-plomo">BI/SFE</button>
+  <div class="card card-body">
+    <p>El consultor no sincroniza diariamente y no registra las vicitas en el dia</p>
+  </div>
+</div>

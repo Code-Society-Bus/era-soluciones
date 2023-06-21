@@ -1,0 +1,48 @@
+<br><br>
+<div id="cont">
+  <div class="row p-4" id="contenedor">
+    <h4 class="titulo">Resultados de último ciclo</h4>
+    <div class="col-10 row contenedor">
+      <div class="ms-4 items col-1 bg-white p-1 rounded border-bottom">
+        <img src="../../../assets/recursos/Group 1127.png" alt="">
+        <h1 class="personas">{{summary.result?.count_consultors}}</h1>
+        <h6 class="categoria">Consultores</h6>
+      </div>
+      <div class="items col-1 bg-white p-1 rounded border-bottom">
+        <img src="../../../assets/recursos/Group 1125.png" alt="">
+        <h1 class="personas">{{summary.result?.count_vacancies}}</h1>
+        <h6 class="categoria">Vacantes</h6>
+      </div>
+      <div class="items col-1 bg-white p-1 rounded border-bottom">
+        <img src="../../../assets/recursos/Group 1123.png" alt="">
+        <h1 class="personas">{{summary.result?.count_remotes}}</h1>
+        <h6 class="categoria">T.Remoto</h6>
+      </div>
+      <div class="items col-1 bg-white p-1 rounded border-bottom">
+        <img src="../../../assets/recursos/Group -3.png" alt="">
+        <h1 class="personas">{{summary.result?.rotation}}</h1>
+        <h6 class="categoria">Rotacion</h6>
+      </div>
+      <div class="items col-1 bg-white p-1 rounded border-bottom">
+        <img src="../../../assets/recursos/Group -4.png" alt="">
+        <h1 class="personas">{{summary.result?.count_permissions}}</h1>
+        <h6 class="categoria">Permisos</h6>
+      </div>
+      <div class="items col-1 bg-white p-1 rounded border-bottom">
+        <img src="../../../assets/recursos/Group 1117.png" alt="">
+        <h1 class="personas">{{summary.result?.count_visits}}</h1>
+        <h6 class="categoria">V.Acomp.</h6>
+      </div>
+    </div>
+    <div class="col-2 img1">
+      <img src="../../../assets/img/imagen.jpg" alt="">
+    </div>
+  </div>
+
+</div>
+<div class="graficoshome">
+  <app-graficoshome></app-graficoshome>
+</div>
+<!-- -->
+
+<app-table></app-table>

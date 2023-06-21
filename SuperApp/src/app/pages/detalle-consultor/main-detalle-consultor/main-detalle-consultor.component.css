@@ -1,0 +1,15 @@
+#user-options{
+    z-index: 99999 !important;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.uno{
+    width: 420px;
+
+}
+.dos{
+    width: 812px;
+}

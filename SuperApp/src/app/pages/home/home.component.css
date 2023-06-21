@@ -1,0 +1,66 @@
+.graficoshome {
+  z-index:-1 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -220px;
+}
+
+.resultado {
+  height: 200px;
+  width: 20px;
+}
+
+#cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#contenedor {
+  width: 1088px;
+  height: 253px;
+  border-radius: 10px;
+  background: #D7F1F8;
+}
+
+.img1 {
+  margin-left: -20px;
+  margin-top: -50px;
+}
+
+.img1 img {
+  height: 190px;
+}
+
+#contenedor .items {
+  height: 144px !important;
+  box-shadow: 0.5px 1.5px rgb(160, 211, 219);
+  text-align: center;
+  width: 124px !important;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+#contenedor .titulo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #004F6D;
+  margin-left: 11px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#contenedor .personas {
+  color: #009CDE;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+#contenedor .categoria {
+  font-weight: normal;
+  color: #004F6D;
+  font-size: 13px;
+  margin-top: -5px;
+}

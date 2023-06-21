@@ -1,0 +1,104 @@
+<div id="user-options"><app-useroptions></app-useroptions></div>
+<div [routerLink]="['/' + generalService.generic_data.consultant?.consultant_data.user_name + '/dashboard']" ><a><h1 class="volver"><img src="../../../../assets/recursos/Group 470.png" alt=""> Volver al resumen del consultor</h1></a></div>
+<div class="contenido">
+    <div class="cabezera">
+        <div class="izquierda">
+            <div class="entregamm">
+                <h2>Entrega de MM</h2>
+                <div class="MM">
+                    <div><h3> {{data?.visits}} </h3> <h4>En visitas</h4> </div> <div><h3>{{data?.stock}}</h3><h4>Del stock</h4> </div>
+                </div>
+            </div>
+        </div>
+        <div class="derecha">
+            <div class="primero">
+                <h1><i class="fas fa-file-download"></i>DESCARGAR</h1>
+                <div class="input-group mb-3 rounded-pill">
+                    <span class="input-group-text bg-white" id="basic-addon1"><img src="../../../../assets/recursos/Group 1164.png" alt=""></span>
+                    <input type="text" class="form-control form-borderless" placeholder="Buscar por Medico" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="segundo">
+                <div>
+                    <h1>Especialidades</h1>
+                    <select class="form-select select1" name="" id="">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div>
+                    <h1>Categorias</h1>
+                    <select class="form-select select2" name="" id="">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+                <div>
+                    <h1>Tareas</h1>
+                    <select class="form-select select3" name="" id="">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="segundo tercero">
+                <div>
+                    <h1>Ordenar por:</h1>
+                    <select class="form-select select4" name="" id="">
+                        <option value="">A-Z por medico</option>
+                    </select>
+                </div>
+                <div>
+                    <h1>Mostrar</h1>
+                    <select class="form-select select5" name="" id="">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    <div class="orden"><h1>25 de 100 resultados</h1></div>
+    <div class="body mt-3">
+        <table class="table table-borderless table-hover bg-white">
+            <thead >
+                <tr>
+                    <th>Médico</th>
+                    <th>Especialidad</th>
+                    <th>Categ.</th>
+                    <th>Tarea</th>
+                    <th class="C">C1</th>
+                    <th class="C">C2</th>
+                    <th class="C">C3</th>
+                    <th class="C">C4</th>
+                    <th class="C">C5</th>
+                    <th class="C">C6</th>
+                    <th class="C">C7</th>
+                    <th class="C">C8</th>
+                    <th class="C">C9</th>
+                    <th class="C">C10</th>
+                    <th class="C">C11</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <div class="division"> <div></div></div>
+            <tbody>
+                <tr>
+                    <td class="color-azul">Ana Romero Inojosa</td>
+                    <td>Cardiovascular & Endocrinology</td>
+                    <td class="color-azul">VIP</td>
+                    <td>AM</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td class="color-azul"><strong>27</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

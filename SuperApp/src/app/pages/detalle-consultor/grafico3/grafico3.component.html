@@ -1,0 +1,23 @@
+<!-- https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/Area/Angular/Light/ -->
+<div id="chart-demo">
+    <dx-chart
+     color="#C4E7F6"
+      [dataSource]="populationData"
+      >
+      <dxi-series valueField="y1564" color="#C4E7F6" name="15-64 years"></dxi-series>
+      <dxi-series valueField="y014" color="#C4E7F6" name="0-14 years"></dxi-series>
+      <dxi-series valueField="y65" color="#C4E7F6" name="65 years and older"></dxi-series>
+      <dxo-common-series-settings
+        #commonSeries
+        argumentField="country"
+        [type]="types[0]"
+      >
+      </dxo-common-series-settings>
+      <dxo-margin [bottom]="20"></dxo-margin>
+      <dxo-argument-axis [valueMarginsEnabled]="false"></dxo-argument-axis>
+      <dxo-export [enabled]="true"></dxo-export>
+      <dxo-legend verticalAlignment="bottom" horizontalAlignment="center">
+      </dxo-legend>
+    </dx-chart>
+  </div>
+  

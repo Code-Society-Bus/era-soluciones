@@ -1,0 +1,101 @@
+<div id="neosalud-main">
+    <div id="head-table">
+        <div class="logo">
+            <table class="table ">
+                <img class="ms-4 pt-3" src="../../../../../assets/recursos/Group 719.png" alt="">
+            </table>
+        </div>
+        <div id="t-head">
+            <table>
+                <th> </th>
+                <th>YTD ANT</th>
+                <th>YTD ACT</th>
+                <th><img src="../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+            </table>
+        </div>
+
+        <div id="t-body">
+            <table>
+                <tr>
+                    <td><strong>TOTAL</strong> </td>
+                    <td>27,085</td>
+                    <td>31,544</td>
+                    <td><strong> <i class="fas fa-arrow-up" style="height: 13px; font-weight: bold;"></i>8.1%</strong>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div #as id="grafico-barras" class="animate__animated animate__fadeIn animate__fast">
+        <div class="barras">
+            <dx-chart id="chart" [dataSource]="neosalud" (onPointClick)="onPointClick($event)">
+                <dxi-series valueField="YTD_ANT" name="YTD_ANT" color="#8064A2"></dxi-series>
+                <dxi-series valueField="YTD_ACT" name="YTD_ACT" color="#E6E0EC"></dxi-series>
+    
+                <dxo-common-series-settings argumentField="prodnom" type="bar" hoverMode="allArgumentPoints"
+                    selectionMode="allArgumentPoints">
+                    <dxo-label [visible]="true" [format]="{
+                  type: 'fixedPoint',
+                  precision: '0'
+                }">
+                    </dxo-label>
+                </dxo-common-series-settings>
+                <dxo-legend verticalAlignment="bottom" horizontalAlignment="center">
+                </dxo-legend>
+                <dxo-export [enabled]="true"></dxo-export>
+            </dx-chart>
+        </div>
+    </div>
+    <br>
+    <div id="table-neosalud">
+        <table class="bg-white table table-borderless table-hover">
+            <thead>
+                <tr>
+                    <th class="pt-3"><img src="../../../../../assets/recursos/mercados icon.png" alt=""> MARCAS
+                    </th>
+                    <th>YTD ANT</th>
+                    <th>YTD ACT</th>
+                    <th><img src="../../../../../assets/recursos/Path 2386.png" alt=""> CREC</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr #pointer>
+                    <td>VOLUSOL</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td style="color:#3ACC9D !important;"><img src="../../../../../assets/recursos/Group 816.png" alt=""> <strong>0%</strong></td>
+                    <td  (click)="detalle()" style="cursor: pointer;"><i class="fas fa-chevron-down"></i>
+                    </td>
+                </tr>
+                <div #graficos id="graficos-neosalud" class="graficos-detalle animate__animated animate__fadeIn animate__fast">
+                    <div class="gd">
+                        <app-detalle-neosalud></app-detalle-neosalud>
+                    </div>
+
+                </div>
+                <tr *ngFor="let consulta of neosalud">
+                    <td>{{consulta.prodnom}} </td>
+                    <td>{{consulta.YTD_ANT}} </td>
+                    <td>{{consulta.YTD_ACT}}</td>
+                    <td style="color:#F72E54 !important;"><img src="../../../../../assets/recursos/Group 1130.png" alt=""> <strong>{{consulta.CREC}} %</strong></td>
+                    <td><i class="fas fa-chevron-down"></i></td>
+                    
+                </tr>
+                <!-- <tr>
+                    <td>VOLUSOL</td>
+                    <td>4,724</td>
+                    <td>4,724</td>
+                    <td style="color:#FCD657 !important;"><img src="../../../../../assets/recursos/Ellipse 109.png" alt=""> <strong></strong></td>
+                    <td><i class="fas fa-chevron-down"></i></td>
+                    
+                </tr>
+               -->
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<br><br>

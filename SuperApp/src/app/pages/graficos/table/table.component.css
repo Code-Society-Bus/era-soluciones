@@ -1,0 +1,158 @@
+.container {
+  margin-bottom: 50px;
+}
+
+.table {
+  border-radius: 0px 0px 10px 10px;
+}
+
+#t-head,
+#t-head2 {
+  background: #E0E2EC;
+}
+
+#t-head2 {
+  margin-bottom: 8px;
+}
+
+table {
+  font-weight: lighter;
+  background: white;
+  width: 1088px;
+  margin: 0px auto;
+  border-radius: 10px;
+  color: #004F6D;
+}
+
+#t-head {
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+}
+
+
+#t-head th {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#t-head th:nth-child(1) {
+  width: 20%;
+}
+
+#t-head th:nth-child(2) {
+  width: 32%;
+  border-bottom: 3px solid #009CDE;
+}
+
+#t-head th:nth-child(3) {
+  width: 16%;
+  border-bottom: 3px solid #3ACC6E;
+}
+
+#t-head th:nth-child(4) {
+  width: 18%;
+  border-bottom: 3px solid #EAB300;
+}
+
+
+tr th {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+th,
+td {
+  padding: 10px;
+
+}
+
+#body th,
+td {
+  border-bottom: 1px solid #d6dfeb;
+}
+
+thead {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.circle svg {
+  color: #FCD657;
+  height: 10px;
+}
+
+.option {
+  width: 1088px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: -15px;
+}
+
+.t-op {
+  font-size: 14px;
+  color: #009CDE;
+  margin-bottom: 0px;
+}
+
+#estado {
+  font-size: 14px;
+  color: #004F6D;
+}
+
+.t-option {
+  flex-basis: 83%;
+}
+
+.t-option h1 {
+  padding-top: 12px;
+  font-weight: bold;
+  color: #004F6D;
+  font-size: 20px;
+}
+
+.options {
+  flex-basis: 17%;
+}
+
+.opciones {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 18px;
+}
+#body{
+  margin-top: -0px;
+}
+#body thead{
+  background:#E0E2EC;
+}
+#body th{
+  *padding-left: 15px;
+}
+#body thead th:nth-child(1) {
+  width: 19%;
+}
+tbody tr:hover{
+  transition: 200ms all;
+  background: #EDEEF2 !important;
+}
+.division{
+    width: 10px !important; 
+    height: 8px;
+}
+.division div{
+    width: 1088px; 
+    height: 8px; 
+    background: #EDEEF2;
+}
+td{
+  text-align: right!important;
+}
+.azul{
+  color: #009CDE !important;
+}

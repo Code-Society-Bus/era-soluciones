@@ -1,0 +1,156 @@
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+:root {
+    box-sizing: border-box;
+}
+
+#body{
+    margin-top: 170px;
+    display: grid;
+    place-content: center;
+    gap: 2em;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*  */
+
+.volver{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #004F6D;
+}
+.volver img{
+    margin-right: 6px;
+}
+
+.container{
+    width: 900px !important;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1ch;
+}
+
+.card {
+    cursor: pointer;
+    width: 210px;
+    height: 246px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    color: #004f6db3;
+    font-size: 0.75rem;
+}
+
+.card:nth-of-type(1) > .card__header{
+    background-color: #962ebe;
+}
+
+
+.card:nth-of-type(2) > .card__header{
+    background-color: #3ACC6E;
+}
+
+.card:nth-of-type(3) > .card__header{
+    background-color: #009CDE;
+}
+
+.card:nth-of-type(4) > .card__header{
+    background-color: #EAB300;
+}
+
+.card__header{
+    width: 210px;
+    height: 138px;
+    color: #fff;
+    aspect-ratio: 16 / 9;
+    font-size: 1rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card__title{
+    font-size: 20px;
+    margin-block: 0;
+    padding: 1ch;
+    padding-left: 1ch;
+}
+
+.card__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.detalle-card{
+    display: flex;
+}
+.detalle-card div{
+    height: 50px;
+}
+.detalle-card div:nth-of-type(1){
+    padding: 15px;
+   width: 100px;
+
+}
+.detalle-card div:nth-of-type(2){
+    padding: 15px;
+    width: 130px
+}
+
+.card > p{
+    padding: 1ch;
+}
+
+/*  */
+
+.graph-card{
+    padding: 1em;
+    border-radius: 15px;
+    background-color: #b5dbff;
+    color: #0d4585;
+    max-width: 22ch;
+    position: relative;
+    min-height: 10em;
+}
+
+.graph-card__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-card__number{
+    font-size: 1.5rem;
+}
+
+.graph-card__title {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.graph-card__detail{
+    font-size: 0.8rem;
+    color: #00c0c0;
+}
+
+.graph-card__graph{
+   /*  background-color: #000; */
+   position: absolute;
+   bottom: 0;
+   right: 1em;
+}
+
+.graph-card__graph-item{
+    background-color: #25e2f0;
+    display: inline-block;
+    width: 1ch;
+    height: 1.5em;
+}

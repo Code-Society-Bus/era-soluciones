@@ -1,0 +1,123 @@
+
+#resumen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#head-table{
+  height: 108px;
+  flex-basis: 57%;
+  margin-left: 50px;
+    width: 810px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 18px;
+    justify-content: center;
+    font-size: 12px;
+  }
+  
+  
+  #t-head{
+    height: 50px;
+    width: 450px;
+    margin-left: 30%;
+  }
+  
+  #t-head table{
+    line-height: 90px;
+    padding-bottom:-50px;
+  }
+
+  #t-head th{
+    color: #246881;
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 22px;   }
+  
+  
+  #t-body{
+    height: 33px;
+    margin-left: 12%;
+    justify-content: center;
+    border-radius: 18px;
+    background: #3ACC6E;
+    color: white;
+    width: 538px;
+    margin-bottom: 25px;
+  }
+  
+  #t-body table{
+    font-size: 12px;
+    line-height: 33px;
+    margin: 12px;
+    width: 550px;
+    border-radius: 15px;
+  }
+  #t-body td{
+    font-size: 13px;
+    padding-left: 15px;
+  }
+  
+  #t-body td:nth-child(1){
+    width: 30%;
+  }
+  
+  
+  #body-tables{
+    margin-left: 50px;
+    font-size: 12px;
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .item1,.item2{
+    width: 400px;
+    overflow: hidden;
+    background: white;
+    border-radius: 18px;
+  }
+  .item1{margin-right: 4px;}
+  .item2{margin-left: 4px;}
+
+  .img{
+    background: white;
+    height: 30px;
+    width: 29px;
+  }
+  .img img{
+    height: 17px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  thead{
+    background: #E0E2EC;
+  }
+  #body-tables td,th{
+    padding-left:10px ;
+  }
+  #body-tables th {
+    font-size: 12px;
+    color: #316F88;
+  }
+  #body-tables td {
+    font-size: 13px;
+    color: #8FB1BF;
+    border-bottom: 1px solid #F4EFF7;
+  }
+  
+  .fa-prescription-bottle-alt{
+   color: #78A2B2;
+  }
+  
+  .arrow{
+    font-weight: bold;
+    color:#3ACC6E !important;
+  }
+  .arrow-red{
+    font-weight: bold;
+    color:red !important;
+  }

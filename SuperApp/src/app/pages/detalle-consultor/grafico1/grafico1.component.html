@@ -1,0 +1,12 @@
+<dx-chart id="chart" [dataSource]="productionData" palette="violet">
+    <dxo-common-series-settings argumentField="country" type="bar" valueField="oil" color="#00B0F0">
+    </dxo-common-series-settings>
+    <dxo-series-template nameField="year" [customizeSeries]="customizeSeries">
+    </dxo-series-template>
+    <dxo-title>
+        <dxo-subtitle></dxo-subtitle>
+    </dxo-title>
+    <dxo-legend verticalAlignment="bottom" horizontalAlignment="center">
+    </dxo-legend>
+    <dxo-export [enabled]="true"></dxo-export>
+</dx-chart>

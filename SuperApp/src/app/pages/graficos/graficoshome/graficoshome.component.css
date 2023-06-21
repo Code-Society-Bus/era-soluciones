@@ -1,0 +1,192 @@
+#graficos{
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    width: 1088px;
+    height: 289px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    padding-left: 6%;
+    display: flex;
+  }
+
+  h1 {
+    margin-left: -80px;
+    font-size: 20px;
+    text-align: center;
+    color: #145D78;
+  }
+  h1 span{
+    margin-left: 140px;
+  }
+
+.skills-container {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.circular-progress {
+  margin: auto;
+  position: relative;
+}
+
+/* Tamaño */
+.circular-progress,
+.circular-progress:before,
+.circular-progress:after {
+  width: 111px;
+  height: 111px;
+  border-radius: 70%;
+}
+
+.circular-progress:before,
+.circular-progress:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Porcentaje */
+.circular-progress:before {
+  color: #004F6D !important;
+  padding: .5em;
+  line-height: 65px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Texto */
+.circular-progress:after {
+  color: #E0E2EC;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 170px;
+}
+
+.html {
+  background: -webkit-linear-gradient(90deg, #00C2E8 50%, #00C2E8 50%);
+  background: linear-gradient(0deg, #00C2E8 50%, #E8EAF3 50%);
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.html:before,
+.html:after {
+  color: #c5c5c5;
+}
+
+.html:before {
+  background: white content-box;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  content: "105%";
+}
+
+.html:after {
+  background: -webkit-linear-gradient(transparent 50%, #111 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "General";
+  -webkit-transform: rotate(-180deg) scale(1.1);
+  -ms-transform: rotate(-180deg) scale(1.1);
+  transform: rotate(-180deg) scale(1.1);
+}
+
+.css {
+  background: -webkit-linear-gradient(90deg, #009CDE 50%, #009CDE 50%);
+  background: linear-gradient(0deg, #009CDE 50%, #E8EAF3 50%);
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.css:before,
+.css:after {
+  color: #c5c5c5;
+}
+
+.css:before {
+  background: white content-box;
+  -webkit-transform: rotate(-150deg);
+  -ms-transform: rotate(-150deg);
+  transform: rotate(-150deg);
+  content: "84%";
+}
+
+.css:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "General";
+  -webkit-transform: rotate(-150deg) scale(1.1);
+  -ms-transform: rotate(-150deg) scale(1.1);
+  transform: rotate(-150deg) scale(1.1);
+}
+
+.javascript {
+  background: -webkit-linear-gradient(90deg, #00C2E8 50%, #00C2E8 50%);
+  background: linear-gradient(0deg, #52E085 50%, #E8EAF3 50%);
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.javascript:before,
+.javascript:after {
+  color: #c5c5c5;
+}
+
+.javascript:before {
+  background: white content-box;
+  -webkit-transform: rotate(-150deg);
+  -ms-transform: rotate(-150deg);
+  transform: rotate(-150deg);
+  content: "84%";
+}
+
+.javascript:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "VIP";
+  -webkit-transform: rotate(-150deg) scale(1.1);
+  -ms-transform: rotate(-150deg) scale(1.1);
+  transform: rotate(-150deg) scale(1.1);
+}
+
+
+  #pie{
+    margin-right: 30px;
+    margin-left: -50px;
+    width: 450px;
+  }
+
+  #tabla{
+    margin-left: 10px;
+    margin-top: -10px;
+    width: 470px;
+    height: 150px;
+  }
+  ::ng-deep dx-chart {
+    font-weight: bold;
+    width: 500px;
+    height: 250px;
+  }
+  ::ng-deep .long-title h1 {
+  padding-top: 10px;
+  padding-bottom: -20px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-bottom: -25px;
+  }
